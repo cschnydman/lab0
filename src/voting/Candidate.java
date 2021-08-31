@@ -8,7 +8,7 @@ package voting;
  * @version Jan 14, 2020
  */
 public class Candidate {
-
+	
 	private String name;
 	private String party;
 	private int votes;
@@ -101,4 +101,13 @@ public class Candidate {
 		}
 	}
 
+	public static void main(String[] args) {
+		Candidate candidate1 = new Candidate("Chloe Schnydman", "Democrat", 12956);
+		Candidate candidate2 = new Candidate("Megan Triplett", "Demopublican", 56);
+		Candidate candidate3 = new Candidate("Donald Duck", "Rupublican", 3);
+		
+		System.out.println(candidate1.getName() + ": " + candidate1.getVotes());
+		System.out.println(candidate2.getName() + ": " + candidate2.getVotes());
+		System.out.println(candidate3.getName() + ": " + candidate3.getVotes());
+	}
 }
